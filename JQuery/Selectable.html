@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="CSS/jquery-ui.min.css">
+
+    <style>
+
+        #feedback {
+            font-size: 1.4em;
+        }
+
+        #selectable .ui-selecting {
+            background: #FECA40;
+        }
+
+        #selectable .ui-selected {
+            background: #F39814;
+            color: white;
+        }
+
+        #selectable {
+            list-style-type: none;
+            margin: 0; padding: 0;
+            width: 60%;
+        }
+
+        #selectable li {
+            margin: 3px;
+            padding: 0.4em;
+            font-size: 1.4em;
+            height: 18px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<ol id="selectable">
+    <li id="selectable1">Item 1</li>
+    <li id="selectable2">Item 2</li>
+    <li id="selectable3">Item 3</li>
+    <li id="selectable4">Item 4</li>
+    <li id="selectable5">Item 5</li>
+    <li id="selectable6">Item 6</li>
+    <li id="selectable7">Item 7</li>
+</ol>
+
+
+
+
+
+
+<script src="JS/jquery-ui.min.js"></script>
+<script src="Jquery/jquery-3.4.1.min.js"></script>
+<script>
+
+    $( function() {
+        $( "#selectable" ).selectable();
+    } );
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Event</title>
+</head>
+<body>
+
+<h1 id="h1">HELLOOOOOOWW</h1>
+
+
+<script src="Jquery/Jquery/jquery-3.4.1.min.js"></script>
+<script>
+
+    $(window).on('mousemove',function (e) {
+        // console.log(e.pageX, e.pageY);
+        $('#h1').css({
+            'top':e.pageY,
+            'left':e.pageX,
+            'position':'absolute'
+        });
+    });
+
+</script>
+</body>
+</html>

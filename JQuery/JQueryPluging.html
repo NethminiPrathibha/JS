@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pluging</title>
+    <link rel="stylesheet"href="CSS/jquery-ui.min.css">
+    <style>
+        #div{
+            width: 200px;
+            height: 100px;
+        }
+        #div>img{
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="div">
+    <img src="Accest/ani01.jpg">
+
+</div>
+
+<script src="Jquery/jquery-3.4.1.min.js"></script>
+<script src="JS/jquery-ui.min.js"></script>
+<script src="JS/oridomi.min.js"></script>
+
+<script>
+
+
+    var folded = new OriDomi(document.getElementsByClassName('div')[0]);
+
+    folded.curl(50, function() {
+        folded.collapse(function() {
+            folded.setSpeed(2000);
+            folded.stairs(-29, function() {
+                folded.foldUp(function() {
+                    folded.unfold();
+                });
+            });
+        });
+    });
+
+</script>
+</body>
+</html>

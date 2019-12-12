@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuert UI</title>
+    <link rel="stylesheet" href="CSS/jquery-ui.min.css">
+
+</head>
+
+<header>
+    <style>
+
+        /*#div{*/
+        /*    width: 190px;*/
+        /*    height: 190px;*/
+        /*    background-color: cadetblue;*/
+        /*}*/
+
+        /*#section{*/
+        /*    width: 300px;*/
+        /*    height: 400px;*/
+        /*    background-color: green;*/
+        /*}*/
+
+
+        #resizable{
+            width: 190px;
+            height: 190px;
+            background-color: cadetblue;
+        }
+
+        #resizable>#h1{
+            text-align: center;
+            margin: 0;
+        }
+
+    </style>
+</header>
+
+<body>
+
+<!--<div id="div">-->
+<!--    <p>Drag me to my target</p>-->
+<!--</div>-->
+<!--<section id="section">-->
+<!--    <p>Drop here</p>-->
+<!--</section>-->
+
+<div id="resizable">
+    <h1 id="h1"></h1>
+</div>
+
+
+
+
+<script src="Jquery/jquery-3.4.1.min.js"></script>
+<script src="JS/jquery-ui.min.js"></script>
+<script>
+    // $( function() {
+    //     $( "#div" ).draggable();
+    // } );
+
+
+
+
+    // $( function() {
+    //     $( "#div" ).draggable();
+    //     $( "#section" ).droppable({
+    //         drop: function( event, ui ) {
+    //             $( this )
+    //                 .addClass( "ui-state-highlight" )
+    //                 .find( "p" )
+    //                 .html( "Dropped!" );
+    //         }
+    //     });
+    // } );
+
+
+
+    $( function() {
+        $( "#resizable" ).resizable();
+    } );
+
+
+</script>
+</body>
+</html>
